@@ -1,0 +1,9 @@
+- [x] Update session management to include `user_id`
+    - [x] Modify `LoginFragment.java` to save `user_id` in `SharedPreferences`
+    - [x] Modify `RegisterFragment.java` to save `user_id` in `SharedPreferences`
+- [x] Fix `Category` constructor calls (Build errors)
+    - [x] Update `AddCategoryFragment.java` to pass `userId`
+    - [x] Update `AddTransactionFragment.java` to pass `userId`
+- [x] Verify build and deployment
+    - [x] Run `:app:assembleDebug`
+    - [x] Deploy and verify database migration

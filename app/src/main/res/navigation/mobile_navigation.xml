@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.projeto.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.example.projeto.ui.auth.RegisterFragment"
+        android:label="Cadastro"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/nav_forgot_password"
+        android:name="com.example.projeto.ui.auth.ForgotPasswordFragment"
+        android:label="Recuperar Senha"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.projeto.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.example.projeto.ui.transactions.TransactionFragment"
+        android:label="Transações"
+        tools:layout="@layout/fragment_transactions">
+        <argument
+            android:name="categoryName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.example.projeto.ui.goals.GoalsFragment"
+        android:label="Metas"
+        tools:layout="@layout/fragment_goals" />
+
+    <fragment
+        android:id="@+id/nav_add_transaction"
+        android:name="com.example.projeto.ui.transactions.form.AddTransactionFragment"
+        android:label="Nova Transação"
+        tools:layout="@layout/fragment_add_transaction">
+        <argument
+            android:name="transactionId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_goal"
+        android:name="com.example.projeto.ui.goals.form.AddGoalFragment"
+        android:label="Nova Meta"
+        tools:layout="@layout/fragment_add_goal">
+        <argument
+            android:name="goalId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.example.projeto.ui.categories.CategoriesFragment"
+        android:label="Categorias"
+        tools:layout="@layout/fragment_categories" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.example.projeto.ui.reports.ReportsFragment"
+        android:label="Relatórios"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/nav_add_category"
+        android:name="com.example.projeto.ui.categories.form.AddCategoryFragment"
+        android:label="Nova Categoria"
+        tools:layout="@layout/fragment_add_category">
+        <argument
+            android:name="categoryId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.projeto.ui.settings.SettingsFragment"
+        android:label="Configurações"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_category_detail"
+        android:name="com.example.projeto.ui.categories.CategoryDetailFragment"
+        android:label="Detalhes da Categoria"
+        tools:layout="@layout/fragment_category_detail">
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+</navigation>

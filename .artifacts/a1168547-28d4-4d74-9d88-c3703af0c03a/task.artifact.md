@@ -1,0 +1,10 @@
+- [x] Remover fragmentos de Contas do `mobile_navigation.xml`
+- [x] Remover item "Contas" do `bottom_navigation.xml`
+- [x] Atualizar `MainActivity.java` (remover ID de destino)
+- [x] Limpar `AppDatabase.java` (remover entidades e DAOs)
+- [ ] Deletar arquivos e pastas obsoletos (Aguardando confirmação ou processo manual)
+    - [x] Pacote `ui/accounts` (Referências removidas)
+    - [x] Modelos `Account` e `CreditCard` (Referências removidas)
+    - [x] DAOs `AccountDao` e `CreditCardDao` (Referências removidas)
+    - [x] `BankSimService.java` (Referências removidas)
+    - [x] Arquivos de layout XML (Referências removidas)

@@ -1,0 +1,8 @@
+- [ ] Add edit icon to `item_transaction.xml`
+- [ ] Update `TransactionAdapter.java` to use the edit icon
+- [ ] Add edit icon to `item_category.xml`
+- [ ] Update `CategoryAdapter.java` to use the edit icon
+- [ ] Add delete button to `fragment_add_category.xml`
+- [ ] Implement edit and delete logic in `AddCategoryFragment.java`
+- [ ] Add `categoryId` argument to `mobile_navigation.xml`
+- [ ] Verify build and functionality
